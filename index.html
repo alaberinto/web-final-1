@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Part 1 - Search Employee Database</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <script type="text/javascript" src="part1.js">
+        </script>
+        <link href="part1.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+        <a href="../part1/index.html" class="title">
+            Part 1 - Search Database</a>
+        <a href="../part2/index.html" class="title">
+            Part 2 Final Quiz
+        </a>
+        <a href="../part3/index.html" class="title">
+            Part 3 - Dodgy Brakes Car Rental
+        </a>
+        <div id="search-bar">
+            Searching for
+            <input type="text" id="search">
+            in
+            <select onchange="setSearch();" id="type">
+                <option value="id">ID</option>
+                <option value="last">Last Name</option>
+                <option value="job">Job Title</option>
+            </select>
+        </div>
+        <div id="table">
+            <table id="header">
+                <tr><th>Last Name</th><th>First Name</th><th>ID</th><th>Company</th><th>Job Title</th><th>Phone</th></tr>
+            </table>
+            <table id="employees">
+            </table>
+        </div>
+    </body>
+</html>
